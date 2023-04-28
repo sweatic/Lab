@@ -7,7 +7,7 @@ class Account:
         self.__account_name = name
         self.__account_balance = 0
 
-    def deposit(self, amount) -> bool:
+    def deposit(self, amount:float) -> bool:
         '''
         Method to deposit funds
         :param amount: Amount deposited
@@ -18,7 +18,7 @@ class Account:
         else:
             self.__account_balance += amount
             return True
-    def withdrawl(self, amount) -> bool:
+    def withdrawl(self, amount:float) -> bool:
         '''
         Method to withdrawl funds
         :param amount: Amount to withdrawl
